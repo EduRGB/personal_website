@@ -23,9 +23,13 @@ export default function handler(
     const encoded = encodeURIComponent(msg)
     // console.log(encoded)
 
-    axios.get(`https://api.telegram.org/${token}/sendMessage?chat_id=${group}&text=${encoded}`)
+    axios
+      .get(`https://api.telegram.org/${token}/sendMessage?chat_id=${group}&text=${encoded}`)
+      .finally(()=>{
+        res.status(200).json({})
+      })
 
-    res.status(200).json({})
+    
     return
   }
   console.log('not acceptable')
