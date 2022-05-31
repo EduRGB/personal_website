@@ -7,8 +7,8 @@
 
 const axios = require('axios').default;
 
-const token = process.env.NEXT_PUBLIC_TELEGRAM_TOKEN
-const group = process.env.NEXT_PUBLIC_TELEGRAM_GROUP
+const token = process.env.TELEGRAM_TOKEN
+const group = process.env.TELEGRAM_GROUP
 
 export default function handler(
   req, //: NextApiRequest,
