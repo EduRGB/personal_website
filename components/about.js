@@ -45,7 +45,7 @@ const Panel = ({ children, transparent = false }) => {
         fontSize: 40,
 
         'svg': {
-          marginRight: 20,
+          marginRight: 35,
         }
       },
     }
